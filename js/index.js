@@ -25,10 +25,13 @@ function resultado(dadoA, dadoB){
 
 document.querySelector("#btnSuerte").onclick =function(){
 	var a = random(2, 7);
-	var b = random(2, 7);
-	var r = resultado(a,b);
+	setTimeout(function(){
+		var b = random(2, 7);
+		var r = resultado(a,b);
 	document.querySelector(".modal-box").style.display = "block";
 	document.querySelector(".modal-box h1").innerHTML = r;
+	},500)
+	
 }
 
 
