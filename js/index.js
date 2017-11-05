@@ -20,3 +20,18 @@ function resultado(dadoA, dadoB){
 	var reto = retos[r-1];
 	return reto;
 }
+
+/* add events */
+
+document.querySelector("#btnSuerte").onclick =function(){
+	var a = random(2, 7);
+	var b = random(2, 7);
+	var r = resultado(a,b);
+	document.querySelector(".modal-box").style.display = "block";
+	document.querySelector(".modal-box h1").innerHTML = r;
+}
+
+
+document.querySelector("#btnContinuar").onclick =function(){
+	document.querySelector(".modal-box").style.display = "none";
+}
