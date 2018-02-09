@@ -22,15 +22,17 @@ function resultado(dadoA, dadoB){
 }
 
 /* add events */
-
+var r = new Random(Random.engines.mt19937().seedWithArray([0x12345678, 0x90abcdef]));
 document.querySelector("#btnSuerte").onclick =function(){
-	var a = random(2, 7);
+	var a = r.integer(1, 6);
+	console.log(a);
 	setTimeout(function(){
-		var b = random(2, 7);
-		var r = resultado(a,b);
-	document.querySelector(".modal-box").style.display = "block";
-	document.querySelector(".modal-box h1").innerHTML = r;
-	},500)
+		var b = r.integer(1, 5);
+		console.log(b);
+		var re = resultado(a,b);
+		document.querySelector(".modal-box").style.display = "block";
+		document.querySelector(".modal-box h1").innerHTML = re;
+	},300);
 
 }
 
