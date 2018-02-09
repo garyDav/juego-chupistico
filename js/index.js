@@ -3,16 +3,16 @@
 var retos = [
 	"",
 	"Te tomas  solo/a",
-	"Se toma el de la izquierda",
-	"Se toma el de la derecha",
+	"Besas al de la izquierda",
+	"Besas al de la derecha",
 	"Obligas a tomar",
 	"Cultura Chupistica",
 	"El patito",
-	"Yo Nunca",
+	"Rotacion",
 	"Declaras tu propia regla",
 	"La pelotita",
 	"Elijes tu zorra",
-	"Versus"
+	"Perreo Intenso"
 ];
 
 function resultado(dadoA, dadoB){
@@ -31,7 +31,7 @@ document.querySelector("#btnSuerte").onclick =function(){
 	document.querySelector(".modal-box").style.display = "block";
 	document.querySelector(".modal-box h1").innerHTML = r;
 	},500)
-	
+
 }
 
 
